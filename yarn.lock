@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"-@^0.0.1":
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/-/-/--0.0.1.tgz#db6db7cd866142880dd03e5b8781d1b4fac0e5bd"
+  integrity sha512-3HfneK3DGAm05fpyj20sT3apkNcvPpCuccOThOPdzz8sY7GgQGe0l93XH9bt+YzibcTIgUAIMoyVJI740RtgyQ==
+
 "@babel/code-frame@7.10.4":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/code-frame/-/code-frame-7.10.4.tgz#168da1a36e90da68ae8d49c0f1b48c7c6249213a"
@@ -7231,6 +7236,11 @@ jsprim@^1.2.2:
     array-includes "^3.1.2"
     object.assign "^4.1.2"
 
+keypress@~0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/keypress/-/keypress-0.1.0.tgz#4a3188d4291b66b4f65edb99f806aa9ae293592a"
+  integrity sha1-SjGI1CkbZrT2XtuZ+AaqmuKTWSo=
+
 killable@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/killable/-/killable-1.0.1.tgz#4c8ce441187a061c7474fb87ca08e2a638194892"
@@ -7357,6 +7367,11 @@ loader-utils@^1.1.0, loader-utils@^1.2.3, loader-utils@^1.4.0:
     big.js "^5.2.2"
     emojis-list "^3.0.0"
     json5 "^1.0.1"
+
+lobster@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/lobster/-/lobster-0.1.0.tgz#8a3db9cdf793a0968503999ba8c1083294cea83d"
+  integrity sha1-ij25zfeToJaFA5mbqMEIMpTOqD0=
 
 locate-path@^2.0.0:
   version "2.0.0"
@@ -11390,6 +11405,23 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typeface-lobster@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-lobster/-/typeface-lobster-1.1.13.tgz#3775220d1264f2b368fe4d3147bf188fd7080967"
+  integrity sha512-Cxc0ani8UUcQPgpWVUdgmNJBqZGGUw4OOx5TOljl7oiOq40L3f8fiOFDmFxayYvIaJ7uqNFVOhdxeCt0ncmjtg==
+
+typeface-open-sans@^1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-open-sans/-/typeface-open-sans-1.1.13.tgz#32a09ebd7df59601e01ad81216f98ce641eeafd1"
+  integrity sha512-lVGVHvYl7UJDFB9vN8r7NHw3sVm7Rjeow6b9AeABc/J+2mDaCkmcdVtw3QZnsJW39P+xm5zeggIj9gLHYGn9Iw==
+
+typeface@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/typeface/-/typeface-0.0.0.tgz#9fe6c23c4eb4b86d3eba31994fd378f20cd03b8d"
+  integrity sha1-n+bCPE60uG0+ujGZT9N48gzQO40=
+  dependencies:
+    keypress "~0.1.0"
 
 unbox-primitive@^1.0.0:
   version "1.0.1"
