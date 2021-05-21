@@ -4,7 +4,7 @@ import Campsiteinfo from './CampsiteinfoComponent';
 
 function RenderDirecroryItem(campsite,onClick){
     return(
-        <Card onClick={() => this.onCampsiteSelect(campsite)}>
+        <Card >
                 <CardImg  width="100%" src={campsite.image} alt={campsite.name} />
                     <CardImgOverlay>
                         <CardTitle>{campsite.name}</CardTitle>
@@ -18,7 +18,7 @@ function Directory(props) {
         const directory = props.campsites.map(campsite => {
             return (
                 <div key={campsite.id} className="col-md-5 m-1">
-                    <RenderDirecroryItem campsite = {campsite} onClick ={props.onClick} />
+                    <RenderDirecroryItem campsite = {campsite} />
                 </div>
             );
         });
