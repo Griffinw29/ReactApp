@@ -39,7 +39,7 @@ function Campsiteinfo(props) {
     if (props.campsite) {
         return ( <div className="row">
             <RenderCampsite campsite={props.campsite} />
-            <RenderComments comments={props.campsite.comments} />
+            <RenderComments comments={props.comments} />
         </div>);
     }
 ​
