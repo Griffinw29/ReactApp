@@ -1,16 +1,16 @@
 import React, {Component, component} from 'react';
 import Directory from './DirectoryComponent';
-import Campsiteinfo from './CampsiteinfoComponent';
+import CampsiteInfo from './CampsiteinfoComponent';
 import { CAMPSITES } from '../shared/campsites';
 import Header from './HeaderComponent';
-import footer from './FooterComponent';
 import Footer from './FooterComponent';
 import Home from './HomeComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
-import ContactComponent from './ContactComponent';
+import Contact from './ContactComponent';
 import { COMMENTS } from '../shared/comments';
 import { PARTNERS } from '../shared/partners';
 import { PROMOTIONS } from '../shared/promotions';
+import About from './AboutComponent';
 
 class Main extends Component {
 
@@ -50,6 +50,8 @@ class Main extends Component {
                     <Route path='/home' component={HomePage} />
                     <Route exact path='/directory' render={() => <Directory campsites={this.state.campsites} />} />
                     <Route exact path='/contactus' component={Contact} />
+                    <Route exact path='/aboutus' render={() => <About partners={this.state.partners} />} />
+                    <Route exact path='/aboutus' component={About} />
                     <Redirect to='/home' />
                 </Switch>
                 <Footer />
