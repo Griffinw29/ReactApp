@@ -1,4 +1,4 @@
-import React, {Component, component} from 'react';
+import React, {Component} from 'react';
 import Directory from './DirectoryComponent';
 import CampsiteInfo from './CampsiteinfoComponent';
 import Header from './HeaderComponent';
@@ -10,14 +10,15 @@ import About from './AboutComponent';
 import { connect } from 'react-redux';
 
 
-const mapStateToProps = () => {
+
+const mapStateToProps = state => {
     return {
          campsites: state.campsites,
-        comments: state.comments,
-        partners: state.partners,
-        promotions: state.promotions
-    }
-}
+         comments: state.comments,
+         partners: state.partners,
+         promotions: state.promotions
+    };
+};
 
 class Main extends Component {
 
@@ -39,7 +40,7 @@ class Main extends Component {
                     comments={this.props.comments.filter(comment => comment.campsiteId === +match.params.campsiteId)}
                 />
             );
-        };    
+        };  
 
         return (
             <div>
@@ -47,6 +48,7 @@ class Main extends Component {
                 <Switch>
                     <Route path='/home' component={HomePage} />
                     <Route exact path='/directory' render={() => <Directory campsites={this.props.campsites} />} />
+                    <Route path='/directory/:campsiteId' component={CampsiteWithId} />
                     <Route exact path='/contactus' component={Contact} />
                     <Route exact path='/aboutus' render={() => <About partners={this.props.partners} />} />
                     <Route exact path='/aboutus' component={About} />

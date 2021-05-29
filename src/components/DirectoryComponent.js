@@ -1,7 +1,8 @@
 import React from 'react';
 import {Card,CardImg,CardImgOverlay,CardTitle,Breadcrumb, BreadcrumbItem} from 'reactstrap';
-import Campsiteinfo from './CampsiteinfoComponent';
 import { Link } from 'react-router-dom';
+import CampsiteInfo from './CampsiteinfoComponent';
+
 
 function RenderDirectoryItem({campsite}) {
     return (
